@@ -14,6 +14,7 @@ group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
 end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '4.0.1'
 
@@ -33,7 +34,7 @@ gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
 
 # Prepackaged patterns and components, built on top of Bourbon, Bitters, and Neat
-gem 'refills'
+#gem 'refills'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
