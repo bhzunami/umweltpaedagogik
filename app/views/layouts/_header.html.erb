@@ -7,14 +7,13 @@
 </section>
 
 <section id="header">
-<nav id="nav">
+ <nav id="nav">
   <ul>
-    <li class="current_page_item"><a href="#">Home</a></li>
-    <li><a href="">Angebot</a></li>
-    <li><a href="#">Fotos</a></li>
-    <li><a href="#">Film</a></li>
-    <li><a href="#">Über uns</a></li>
+    <li><%= link_to "Home", root_path() %></li>
+    <li><%= link_to "Angebot", offers_path() %></li>
+    <li><%= link_to "Fotos", photos_path()%></li>
+    <li><%= link_to "Filme", videos_path()%></li>
+    <li><%= link_to "Über uns", aboutUs_path()%></li>
   </ul>
-</nav>
-
+</nav> 
 </section>

@@ -1,5 +1,12 @@
 Umweltpaedagogik::Application.routes.draw do
-  get "static_pages/home"
+
+  # Static Pages
+  get "/offers", to: "static_pages#offers"
+  get "/photos", to: "static_pages#photos"
+  get "/videos", to: "static_pages#videos"
+  get "/aboutUs",to: "static_pages#aboutUs"
+  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
