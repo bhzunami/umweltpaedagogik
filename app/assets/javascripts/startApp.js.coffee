@@ -1,7 +1,7 @@
 $(document).on "ready page:load", ->
 	new NavBarController()
 	$("#accordion").accordion
-  	autoHeight: true
+  	heightStyle: "content"
   	navigation: true
-  	#active: false
-  	#collapsible: true
+  	active: false
+  	collapsible: true
