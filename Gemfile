@@ -35,6 +35,9 @@ gem 'turbolinks', '1.1.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '1.0.2'
 
+# Use Haml for HTML
+gem "haml-rails"
+
 # Prepackaged patterns and components, built on top of Bourbon, Bitters, and Neat
 #gem 'refills'
 
