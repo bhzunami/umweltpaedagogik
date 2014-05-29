@@ -4,11 +4,11 @@
 
 #accordion .ui-accordion-header {
 	margin-bottom: 0.3em; /* spaces between the boxes */
-	border-radius: 5px;
 	text-decoration: none;
-	background-color: #00CED1; /*  0A459E 0A9E75  09946E  2970DA 2188A8  1A8F4E*/
+	border-bottom: 1px solid rgba(0, 0, 0, .2);  
+	/* background-color: #00CED1;  0A459E 0A9E75  09946E  2970DA 2188A8  1A8F4E*/
 	a {
-		color: #fff;
+		color: #000;
 		line-height: 42px; /* How big are the titles */
 		display: block;
 		font-size: 12pt;
@@ -19,6 +19,7 @@
 
 #offerTitle {
 	line-height: 0.75em;
+	border-top: 1px;
 }
 
 #orders {

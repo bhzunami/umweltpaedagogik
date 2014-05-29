@@ -11,7 +11,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* Color define */
 $background-grey: #f3f6fa;
 $textColor: #7c8081;
-$violet: #450A9E;
+$violet: #00b0f0; /* #450A9E;  54a6ce 00b0f0 */
 
 
 /* Basic */
@@ -77,7 +77,7 @@ h3 {
 		-o-animation-fill-mode: forwards;
 		-ms-animation-fill-mode: forwards;
 		animation-fill-mode: forwards;
-		background: rgba(52, 27, 43, 0.5);
+		background: rgba(52, 27, 43, 0.3);
 		color: white;
 		display: inline-block;
 		opacity: 0; /* don't show it before animation */
@@ -125,7 +125,7 @@ h3 {
     	display: inline-block;
     	margin: 0 0.35em 0 0.35em;
     	&:hover > a, &.active > a {
-      	background: #C8D1D3;
+      	background: #BDDCE7; /* BDDCE7  C8D1D3 */
     	}
     	&.current_page_item > a {
       	background: $violet;
@@ -141,8 +141,8 @@ h3 {
 }
 
 #footer {
-	background: #252122;
-	color: #fff;
+	background: #BFEFFF;/* #252122; */
+	color: #1f497d;
 	font-size: 0.8em;
 	p {
 		line-height: 1.2;
