@@ -27,7 +27,7 @@ gem 'coffee-rails', '4.0.1'
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '3.0.4'
 
-gem "jquery-ui-rails"
+gem "jquery-ui-rails", '4.2.1'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks', '1.1.1'
@@ -37,6 +37,9 @@ gem 'jbuilder', '1.0.2'
 
 # Use Haml for HTML
 gem "haml-rails"
+
+# Show image with slide and popup
+gem "fancybox2-rails", "0.2.4"
 
 # Prepackaged patterns and components, built on top of Bourbon, Bitters, and Neat
 #gem 'refills'

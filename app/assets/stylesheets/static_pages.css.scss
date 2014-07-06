@@ -11,32 +11,33 @@
 		color: #000;
 		line-height: 42px; /* How big are the titles */
 		display: block;
-		font-size: 12pt;
-		width: 100%;
+		font-size: 14pt;
+		width: 200%;
 		text-indent: 10px; /* Put the title a little bit right */
 	}
 }
 
-#offerTitle {
-	line-height: 0.75em;
-	border-top: 1px;
-}
 
 #orders {
 	font-size: 15pt;
 	font-weight: 300;
 	letter-spacing: 0.025em;
 	line-height: 1.75em;
-	#title {
-		font-weight: 400;
-	}
+	margin-left: 20px;
 }
+
+/* make the td bold of 'kursleitung ...' */
 .orderTitle {
 	font-weight: 400;
+	width: 150px;
+}
+
+.warn {
+	color: #FF9933
 }
 
 hr {
 		margin: 20px 0 0 0 ;
 		border:0;
-		border-top:1px solid #D5DAD7;
+		border-top:4px solid #D5DAD7;
 	}
