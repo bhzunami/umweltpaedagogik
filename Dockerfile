@@ -23,7 +23,7 @@ ADD ./nginx-sites.conf /etc/nginx/sites-enabled/default
 ADD ./start-server.sh /usr/bin/start-server
 RUN chmod +x /usr/bin/start-server
 
-ADD ./projects/umweltpaedagogik /rails
+ADD ./ /rails
 
 WORKDIR /rails
 
