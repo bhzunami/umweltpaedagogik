@@ -5,6 +5,8 @@ Umweltpaedagogik::Application.routes.draw do
   get "/photos", to: "static_pages#photos"
   get "/videos", to: "static_pages#videos"
   get "/aboutUs",to: "static_pages#aboutUs"
+  get "/kunden",to: "static_pages#kunden"
+  get "/kurs_effizienz",to: "static_pages#kurs_effizienz"
   
 
   # The priority is based upon order of creation: first created -> highest priority.

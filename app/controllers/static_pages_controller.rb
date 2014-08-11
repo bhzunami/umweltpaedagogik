@@ -13,4 +13,10 @@ class StaticPagesController < ApplicationController
 
   def videos
   end
+
+  def kunden
+  end
+  
+  def kurs_effizienz
+  end
 end
