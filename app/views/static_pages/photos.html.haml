@@ -1,4 +1,72 @@
 %article#main
-  %h1 Fotos
-  %p
-    Fotos
+  %h1 Littering im Waldkurs
+  - category = "littering_im_waldkurs"
+  - @littering_im_waldkurs.in_groups_of(4, false) do |image_line|
+    .row.row-content.buffer
+      - image_line.each do |image|
+        .image-box.column
+          %a.fancybox{href: image_path(get_original(image, category)), rel: "gallery", title: ""}
+            = image_tag(get_image_path(image, category))
+  
+  .clear
+  %hr.hr
+  %h1 Kompostkurs im Kindergarten
+  - category = "kompostkurs_kindergarten"
+  - @kompostkurs_kindergarten.in_groups_of(4, false) do |image_line|
+    .row.row-content.buffer
+      - image_line.each do |image|
+        .image-box.column
+          %a.fancybox{href: image_path(get_original(image, category)), rel: "gallery", title: ""}
+            = image_tag(get_image_path(image, category))
+  
+  .clear
+  %hr.hr
+  %h1 Werken mit Abfall
+  - category = "werken_mit_abfall"
+  - @werken_mit_abfall.in_groups_of(4, false) do |image_line|
+    .row.row-content.buffer
+      - image_line.each do |image|
+        .image-box.column
+          %a.fancybox{href: image_path(get_original(image, category)), rel: "gallery", title: ""}
+            = image_tag(get_image_path(image, category))
+
+  .clear
+  %hr.hr
+  %h1 Anti Littering
+  - category = "anti_littering"
+  - @anti_littering.in_groups_of(4, false) do |image_line|
+    .row.row-content.buffer
+      - image_line.each do |image|
+        .image-box.column
+          %a.fancybox{href: image_path(get_original(image, category)), rel: "gallery", title: ""}
+            = image_tag(get_image_path(image, category))
+  .clear
+  %b Sekundarschule
+  - category = "anti_littering/sek"
+  - @sek.in_groups_of(4, false) do |image_line|
+    .row.row-content.buffer
+      - image_line.each do |image|
+        .image-box.column
+          %a.fancybox{href: image_path(get_original(image, category)), rel: "gallery", title: ""}
+            = image_tag(get_image_path(image, category))
+  .clear
+  %b Sekundarschule Binningen
+  - category = "anti_littering/sek_bi"
+  - @sek_bi.in_groups_of(4, false) do |image_line|
+    .row.row-content.buffer
+      - image_line.each do |image|
+        .column
+          %a.fancybox{href: image_path(get_original(image, category)), rel: "gallery", title: ""}
+            = image_tag(get_image_path(image, category))
+
+
+  .clear
+  %hr.hr
+  %h1 Sonstiges
+  - category = "sonstiges"
+  - @sonstiges.in_groups_of(4, false) do |image_line|
+    .row.row-content.buffer
+      - image_line.each do |image|
+        .column
+          %a.fancybox{href: image_path(get_original(image, category)), rel: "gallery", title: ""}
+            = image_tag(get_image_path(image, category))
