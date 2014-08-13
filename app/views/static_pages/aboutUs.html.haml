@@ -1,8 +1,15 @@
 %article#main
   %h1 Wer wir sind
 
-  %a.fancybox{href: image_path('Barbara_Schumacher.jpg'), rel: "gallery", title: "Barbara Schumacher"}
-    = image_tag('Barbara_Schumacher_tb.jpg' )
-  
-  %br/
-  Barbara Schumacher
+  .row.row-content.buffer
+    .column.half
+      %a.fancybox{href: image_path('Barbara_Schumacher.jpg'), rel: "gallery", title: "Barbara Schumacher"}
+        = image_tag('Barbara_Schumacher_tb.jpg' )
+      %br/
+      Barbara Schumacher
+
+    .column.half.last
+      %a.fancybox{href: image_path('Birgit_Gluth.jpg'), rel: "gallery", title: "Brigit Gluth"}
+        = image_tag('Birgit_Gluth_tb.jpg' )
+      %br/
+      Brigit Gluth
