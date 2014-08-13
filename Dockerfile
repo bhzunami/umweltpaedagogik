@@ -1,34 +1,26 @@
-# Dockerfile for a Rails application using Nginx and Unicorn
+# Dockerfile for a Rails application using Apache and Passenger
 
-# Select ubuntu as the base image
-
-FROM ubuntu
+FROM bhzunami/rails_base:latest
 MAINTAINER N. Mauchle "nmauchle@gmail.com"
 
-RUN apt-get update -q
-RUN apt-get -qy upgrade
-RUN apt-get install -qy nginx
-RUN apt-get install -qy curl
-RUN apt-get install -qy nodejs
-RUN echo "daemon off;" >> /etc/nginx/nginx.conf
+RUN apt-get update
+RUN apt-get upgrade -y
+RUN apt-get install git -y
 
-# rvm ruby
-RUN curl -sSL https://get.rvm.io | bash -s stable
-RUN /bin/bash -l -c "rvm requirements"
-RUN /bin/bash -l -c "rvm install 2.1.0"
-RUN /bin/bash -l -c "gem install bunlder --no-ri --no-rdoc"
+USER rails_app
+WORKDIR /home/rails_app
+RUN git clone https://github.com/bhzunami/umweltpaedagogik.git app
 
-# Configuration
-ADD ./nginx-sites.conf /etc/nginx/sites-enabled/default
-ADD ./start-server.sh /usr/bin/start-server
-RUN chmod +x /usr/bin/start-server
+# Do the RAILS STUFF
+WORKDIR /home/rails_app/app
+#ENV RVM_PATH /home/rails_app/.rvm/gems/ruby-2.0.0-p481@global/bin/
+ENV PATH /home/rails_app/.rvm/gems/ruby-2.0.0-p481/bin:/home/rails_app/.rvm/gems/ruby-2.0.0-p481@global/bin:/home/rails_app/.rvm/rubies/ruby-2.0.0-p481/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/rails_app/.rvm/bin:/home/rails_app/.rvm/bin
+RUN bundle install --deployment --without development test
+RUN bundle exec rake db:migrate RAILS_ENV=production
+RUN bundle exec rake assets:precompile RAILS_ENV=production
+RUN touch tmp/restart.txt
 
-ADD ./ /rails
-
-WORKDIR /rails
-
-RUN /bin/bash -l -c "bundle install"
-
-EXPOSE 80
-
-#ENTRYPOINT /bin/bash
+USER root
+ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+WORKDIR /root
+CMD ["/sbin/my_init", "--", "bash", "-l"]
