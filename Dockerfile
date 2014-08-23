@@ -1,7 +1,7 @@
 # Dockerfile for a Rails application using Apache and Passenger
 
 FROM bhzunami/rails_base:latest
-MAINTAINER N. Mauchle "nmauchle@gmail.com"
+MAINTAINER N. Mauchle "nmauchle@gmail.com" P. Steinger 
 
 RUN apt-get update
 RUN apt-get upgrade -y
