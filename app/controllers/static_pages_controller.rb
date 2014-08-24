@@ -26,4 +26,8 @@ class StaticPagesController < ApplicationController
   
   def kurs_effizienz
   end
+
+  def medienberichte
+  end
+  
 end

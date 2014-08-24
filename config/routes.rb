@@ -7,6 +7,7 @@ Umweltpaedagogik::Application.routes.draw do
   get "/aboutUs",to: "static_pages#aboutUs"
   get "/kunden",to: "static_pages#kunden"
   get "/kurs_effizienz",to: "static_pages#kurs_effizienz"
+  get "/medienberichte",to: "static_pages#medienberichte"
   
 
   # The priority is based upon order of creation: first created -> highest priority.
