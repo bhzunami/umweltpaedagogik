@@ -12,6 +12,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 $background-grey: #f3f6fa;
 $textColor: #7c8081;
 $violet: #00b0f0; /* #450A9E;  54a6ce 00b0f0 */
+$text-grey: #575B5C;
 
 
 /* Basic */
@@ -30,6 +31,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 500;
 	line-height: 1.75em;
 	margin-bottom: 1em;
+}
+
+/* Schrift grösser bei Medienberichte*/
+h3 {
+	font-size: 18pt;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -160,5 +166,7 @@ h3 {
 	}	
 }
 
-
+.test {
+	color: $text-grey;
+}
 

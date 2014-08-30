@@ -1,6 +1,6 @@
 %article#main
 	%p
-	#accordion
+	#accordion.test
 		%h4
 			%a{href: "#"} Primarschule und Kindergarten
 		= render 'primarKindergarten'
@@ -11,13 +11,11 @@
 
 		%h4
 			%a{href: "#"} Lehrerweiterbildung
-		%div
-			Momentan keine Kurse
+		= render 'lehrer_weiterbildung'
 
 		%h4
 			%a{href: "#"} Erwachsenbildung
-		%div
-			Momentan keine Kurse
+		= render 'eltern'
 
 		/ %h4
 		/	%a{href: "#"} Erwachsenbildung

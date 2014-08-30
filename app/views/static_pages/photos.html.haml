@@ -58,15 +58,33 @@
         .column
           %a.fancybox{href: image_path(get_original(image, category)), rel: "gallery", title: ""}
             = image_tag(get_image_path(image, category))
-
-
   .clear
-  %hr.hr
-  %h1 Sonstiges
-  - category = "sonstiges"
-  - @sonstiges.in_groups_of(4, false) do |image_line|
+  %b Jugendhaus Therwil
+  - category = "anti_littering/jug_therwil"
+  - @jug_therwil.in_groups_of(4, false) do |image_line|
     .row.row-content.buffer
       - image_line.each do |image|
         .column
           %a.fancybox{href: image_path(get_original(image, category)), rel: "gallery", title: ""}
             = image_tag(get_image_path(image, category))
+  .clear
+  %hr.hr
+  %h1 Abfallwettspiele
+  - category = "abfallwettspiele"
+  - @abfallwettspiele.in_groups_of(4, false) do |image_line|
+    .row.row-content.buffer
+      - image_line.each do |image|
+        .column
+          %a.fancybox{href: image_path(get_original(image, category)), rel: "gallery", title: ""}
+            = image_tag(get_image_path(image, category))
+  .clear
+  %hr.hr
+  %h1 Kompostmobil
+  - category = "kompostmobil"
+  - @kompostmobil.in_groups_of(4, false) do |image_line|
+    .row.row-content.buffer
+      - image_line.each do |image|
+        .column
+          %a.fancybox{href: image_path(get_original(image, category)), rel: "gallery", title: ""}
+            = image_tag(get_image_path(image, category))
+  .clear

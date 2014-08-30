@@ -15,7 +15,11 @@ class StaticPagesController < ApplicationController
     @anti_littering = Dir.glob("app/assets/images/gallery/anti_littering/*tb*")
     @sek = Dir.glob("app/assets/images/gallery/anti_littering/sek/*tb*")
     @sek_bi = Dir.glob("app/assets/images/gallery/anti_littering/sek_bi/*tb*")
-    @sonstiges = Dir.glob("app/assets/images/gallery/sonstiges/*tb*")
+    @jug_therwil = Dir.glob("app/assets/images/gallery/anti_littering/jug_therwil/*tb*")  
+    @abfallwettspiele = Dir.glob("app/assets/images/gallery/abfallwettspiele/*tb*")
+    @kompostmobil = Dir.glob("app/assets/images/gallery/kompostmobil/*tb*")
+
+    
   end
 
   def videos

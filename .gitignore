@@ -30,6 +30,9 @@ config/secrets.yml
 ## Environment normalisation:
 /vendor/bundle
 
+
+# Fotos
+app/assets/images/not_used/
 # these should all be checked in to normalise the environment:
 # Gemfile.lock, .ruby-version, .ruby-gemset
 
