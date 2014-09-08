@@ -1,15 +1,177 @@
 %article#main
   %h1 Wer wir sind
-
   .row.row-content.buffer
     .column.half
-      %a.fancybox{href: image_path('Barbara_Schumacher.jpg'), rel: "gallery", title: "Barbara Schumacher"}
+      %a#img_barbara.fancybox{href: image_path('Barbara_Schumacher.jpg'), rel: "gallery", title: "Barbara Schumacher"}
         = image_tag('Barbara_Schumacher_tb.jpg' )
       %br/
-      Barbara Schumacher
+      %h3
+        %a#barbara{href: "barbara"}Barbara Schumacher
 
     .column.half.last
-      %a.fancybox{href: image_path('Birgit_Gluth.jpg'), rel: "gallery", title: "Brigit Gluth"}
+      %a#img_birgit.fancybox{href: image_path('Birgit_Gluth.jpg'), rel: "gallery", title: "Brigit Gluth"}
         = image_tag('Birgit_Gluth_tb.jpg' )
       %br/
-      Brigit Gluth
+      %h3
+        %a#birgit{href: "birgit"}Brigit Gluth
+  .clear
+  #cv_barbara
+    .column.two.reset
+      %h5 Privat
+    .column.ten.reset
+      Geboren am 2. Juni 1964 in Basel
+      %br/
+      Mutter einer jugendlichen Tochter.
+    .clear
+
+    %hr.hr_us
+    .column.two.reset
+      %h5 Berufliches
+    .column.ten.reset
+      Seit 10 Jahren fast täglich als Umwelt- und Abfallpädagogin im Einsatz.
+      %br/
+      Tätig für folgende Firmen, Schulen und Organisationen
+      %br/
+      %br/
+      .column.four.reset
+        #title_institut Energie Zukunft Schweiz
+      .column.eight.reset
+        Guide auf Anlagen für erneuerbare Energie und   Marketingplanung für deren Schulprojekte
+      .clear
+      %br/
+      .column.four.reset
+        #title_institut Amt für Umweltschutz und Abfallpädagogin Energie Basel
+      .column.eight.reset
+        Abfallpädagogin
+      .clear
+      %br/
+      .column.four.reset
+        #title_institut Gemeinden
+        Aesch, Allschwil, Biel-Benken, Binningen, Birsfelden, Bottmingen, Ettingen, Muttenz, Oberwil, Reinach, Therwil
+      .column.eight.reset
+        Abfall- und Umweltpädagogin und Beraterin Anti-Littering Kampagnen Abfallarme Veranstaltungen
+      .clear
+      %br/
+      .column.four.reset
+        #title_institut Natur- und Vogelschutzverein Oberwil
+      .column.eight.reset
+        Beraterin, Mitorganisation und Realisation von Projekten und Anlässen
+      .clear
+      %br/
+      .column.four.reset
+        #title_institut Umwelt und Landschaft Therwil
+      .column.eight.reset
+      .clear
+      %br/
+      .column.four.reset
+        #title_institut Umweltschutzkommission Biel-Benken
+      .column.eight.reset
+        Präsidentin
+      .clear
+    .clear
+    %hr.hr_us
+    .column.two.reset
+      %h5 Berufliche Entwicklung
+    .column.ten.reset
+      #timeline.container
+        .timeline-block
+          .timeline-content
+            %h2 Projektleiterin Distributionskommunikation
+            %p Schweizer Radio DRS, Basel und Zürich
+            %span.date 2001 bis 2007
+        .timeline-block
+          .timeline-content
+            %h2 Marketingberatung und -realisation
+            %p Atelier 111 Ökobau, Basel
+            %span.date 1999 bis 2000
+        .timeline-block
+          .timeline-content
+            %h2 Produktmanagerin OTC-Heilmittel, Diätetika, Mutter&Kind
+            %p Weleda AG, Arlesheim
+            %span.date 1990 bis 1999
+    .clear
+    %hr.hr_us
+    .column.two.reset
+      %h5 Weitere Interessen
+    .column.ten.reset
+      Jogging, Yoga, Mountainbike, Wandern, Gartengestaltung, Textilesgestalten, Fasnacht
+    .clear
+  
+  #cv_birgit
+    .column.two.reset
+      %h5 Privat
+    .column.ten.reset
+      Geboren am 21.März 1967 in Basel
+      %br/
+      Lebt mit Mann und zwei Söhnen in Laufen BL
+    .clear
+
+    %hr.hr_us
+    .column.two.reset
+      %h5 Berufliches
+    .column.ten.reset
+      .column.four.reset
+        #title_institut Waldkindergarten
+      .column.eight.reset
+        Seit 2012 als Kindergärtnerin im Waldkindergarten der Gemeinde Biel-Benken zu 60% tätig.
+      .clear
+      %br/
+      .column.four.reset
+        #title_institut Theaterpädagogin
+      .column.eight.reset
+        Als Theaterpädagogin und Regiesseurin seit 2005 engagiert.
+        %ul
+          %li Weihnachtsmusical der Kirchgemeinde Laufenthal
+          %li Theaterworkshop für Jugendliche Kulturfohrum Laufen
+      .clear
+      %br/
+      .column.four.reset
+        #title_institut Umwelttheater
+        Gemeinden: Allschwil, Biel-Benken, Binningen, Birsfelden, Bottmingen, Ettingen, Muttenz, Oberwil, Reinach, Therwil
+      .column.eight.reset
+        Zweimal Wöchentlich als Umwelt- und Abfallpädagogin mit  dem Umwelttheater  in Schulen und Kindergärten im Einsatz.
+      .clear
+    .clear
+    %hr.hr_us
+    .column.two.reset
+      %h5 Berufliche Entwicklung
+    .column.ten.reset
+      #timeline.container
+        .timeline-block
+          .timeline-content
+            %h2 Theaterpädagogin Freizeitkurs
+            %p Schule Münchenstein
+            %span.date 2011-2013
+        .timeline-block
+          .timeline-content
+            %h2 Figurentheater Birgit Gluth
+            %p Es entstanden 3 Bühnenstücke die in der Deutschschweiz zur Aufführung kamen
+            %span.date 2005-2012
+        .timeline-block
+          .timeline-content
+            %h2 Kindergärtnerin
+            %p in verschiedenen Gemeinden
+            %span.date seit 2004
+        .timeline-block
+          .timeline-content
+            %h2 Theaterpädagogin Freizeitkurs
+            %p Schule Wallisellen ZH
+            %span.date 2001-2004
+        .timeline-block
+          .timeline-content
+            %h2 Hochschule für Theater
+            %p Zürich
+            %span.date 1995-1996
+        .timeline-block
+          .timeline-content
+            %h2 Kindergärtnerin
+            %p Reinach
+            %span.date 1992-1995
+    .clear
+    %hr.hr_us
+    .column.two.reset
+      %h5 Weitere Interessen
+    .column.ten.reset
+      Gärtnern, Wildkräuter sammeln und auf verschiedenste Arten verwenden, Lesen, Wandern, Kochen und Backen, Basteln und Gestalten, Theater
+    .clear
+   

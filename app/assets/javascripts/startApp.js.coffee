@@ -1,20 +1,21 @@
 $(document).on "ready page:load", ->
-	new NavBarController()
-	$("#accordion").accordion
-  	heightStyle: "content"
-  	navigation: true
-  	active: false
-  	collapsible: true
+  new NavBarController()
+  about = new AboutUs_Controller()
+  $("#accordion").accordion
+    heightStyle: "content"
+    navigation: true
+    active: false
+    collapsible: true
 
   $(".fancybox").fancybox
     padding: 0
     openEffect: "elastic"
 
   $("#video_1").prettyEmbed
-  	videoID: "Ucx33NbxOCc"
-  	useFitVids: false
-  	playerControls: true
-  	playerInfo: false
+    videoID: "Ucx33NbxOCc"
+    useFitVids: false
+    playerControls: true
+    playerInfo: false
 
   $("#video_2").prettyEmbed
     videoID: "3A0rxt3Byjo"
@@ -39,3 +40,11 @@ $(document).on "ready page:load", ->
     useFitVids: false
     playerControls: true
     playerInfo: false
+
+  $("#barbara").click ->
+    about.barbara()
+    return false
+
+  $("#birgit").click ->
+    about.birgit()
+    return false

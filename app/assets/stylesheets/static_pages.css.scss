@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 #accordion .ui-accordion-header {
 	margin-bottom: 0.3em; /* spaces between the boxes */
 	text-decoration: none;
@@ -36,8 +37,81 @@
 	color: #FF9933
 }
 
-hr {
+.hr {
 		margin: 20px 0 0 0 ;
 		border:0;
 		border-top:4px solid #D5DAD7;
 	}
+
+.hr_us {
+	border:0;
+	border-top:2px solid #D5DAD7;
+	margin: 0.5em;
+}
+
+#timeline {
+  position: relative;
+  padding: 2em 0;
+  margin-bottom: 3em;
+}
+
+/* this is the vertical line */
+#timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: #D5DAD7;
+  left: 50%;
+}
+/* Abstand zwischen einträgen*/
+.timeline-block {
+  position: relative;
+  margin: 2em 0;
+}
+
+/* Linie geht durch alle */
+.timeline-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* CONTENT */
+.timeline-content {
+  position: relative;
+  padding: 0.5em;
+  width: 49%;
+  p {
+    font-size: 13px;
+  }
+  h2 {
+    border-bottom: 2px solid #D5DAD7;
+  }
+  .date {
+    position: absolute;
+    width: 100%;
+    left: 105%;
+    top: 25px;
+    font-size: 22px;
+  }
+}
+
+
+/* This is the change left right*/
+.timeline-block:nth-child(even) .timeline-content {
+  float: right;
+  h2, p {
+    padding-left: 40px;
+  }
+}
+
+.timeline-block:nth-child(even) .timeline-content .date {
+  left: auto;
+  right: 105%;
+  text-align: right;
+}
+
+
+
