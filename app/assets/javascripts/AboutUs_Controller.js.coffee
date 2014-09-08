@@ -39,21 +39,21 @@ class @AboutUs_Controller
 
   #Image manipulation
   barbara_grey: ->
-    $("#img_barbara").css "filter", "grayscale(100%)"
-    $("#img_barbara").css "-webkit-filter", "grayscale(100%)"
-    $("#img_barbara").css "-moz-filter", "grayscale(100%)"
+    $("#barbara").css "filter", "grayscale(100%)"
+    $("#barbara").css "-webkit-filter", "grayscale(100%)"
+    $("#barbara").css "-moz-filter", "grayscale(100%)"
 
   barbara_color: ->
-    $("#img_barbara").css "filter", ""
-    $("#img_barbara").css "-webkit-filter", ""
-    $("#img_barbara").css "-moz-filter", ""
+    $("#barbara").css "filter", ""
+    $("#barbara").css "-webkit-filter", ""
+    $("#barbara").css "-moz-filter", ""
 
   birgit_grey: ->
-    $("#img_birgit").css "filter", "grayscale(100%)"
-    $("#img_birgit").css "-webkit-filter", "grayscale(100%)"
-    $("#img_birgit").css "-moz-filter", "grayscale(100%)"
+    $("#birgit").css "filter", "grayscale(100%)"
+    $("#birgit").css "-webkit-filter", "grayscale(100%)"
+    $("#birgit").css "-moz-filter", "grayscale(100%)"
 
   birgit_color: ->
-    $("#img_birgit").css "filter", ""
-    $("#img_birgit").css "-webkit-filter", ""
-    $("#img_birgit").css "-moz-filter", ""
+    $("#birgit").css "filter", ""
+    $("#birgit").css "-webkit-filter", ""
+    $("#birgit").css "-moz-filter", ""

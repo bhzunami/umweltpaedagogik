@@ -1,20 +1,24 @@
 %article#main
   %h1 Wer wir sind
   .row.row-content.buffer
-    .column.half
-      %a#img_barbara.fancybox{href: image_path('Barbara_Schumacher.jpg'), rel: "gallery", title: "Barbara Schumacher"}
+    .column.half#barbara
+      %a{href: "#barbara"}
         = image_tag('Barbara_Schumacher_tb.jpg' )
       %br/
       %h3
-        %a#barbara{href: "barbara"}Barbara Schumacher
+        Barbara Schumacher
+      %a{href: "#barbara"}Profil anzeigen
 
-    .column.half.last
-      %a#img_birgit.fancybox{href: image_path('Birgit_Gluth.jpg'), rel: "gallery", title: "Brigit Gluth"}
+    .column.half.last#birgit
+      %a{href: "#birgit"}
         = image_tag('Birgit_Gluth_tb.jpg' )
       %br/
       %h3
-        %a#birgit{href: "birgit"}Brigit Gluth
+        Brigit Gluth
+      %a{href: "#birgit"}Profil anzeigen
+
   .clear
+  %br/
   #cv_barbara
     .column.two.reset
       %h5 Privat

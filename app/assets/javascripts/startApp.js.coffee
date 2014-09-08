@@ -43,8 +43,6 @@ $(document).on "ready page:load", ->
 
   $("#barbara").click ->
     about.barbara()
-    return false
 
   $("#birgit").click ->
     about.birgit()
-    return false
