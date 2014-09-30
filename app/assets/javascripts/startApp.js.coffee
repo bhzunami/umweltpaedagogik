@@ -41,6 +41,12 @@ $(document).on "ready page:load", ->
     playerControls: true
     playerInfo: false
 
+  $("#video_6").prettyEmbed
+    videoID: "GLgh9h2ePYw"
+    useFitVids: false
+    playerControls: true
+    playerInfo: false
+
   $("#barbara").click ->
     about.barbara()
 

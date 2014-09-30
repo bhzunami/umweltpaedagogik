@@ -6,7 +6,6 @@ Umweltpaedagogik::Application.routes.draw do
   get "/videos", to: "static_pages#videos"
   get "/aboutUs",to: "static_pages#aboutUs"
   get "/kunden",to: "static_pages#kunden"
-  get "/kurs_effizienz",to: "static_pages#kurs_effizienz"
   get "/medienberichte",to: "static_pages#medienberichte"
   
 

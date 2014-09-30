@@ -39,21 +39,25 @@ class @AboutUs_Controller
 
   #Image manipulation
   barbara_grey: ->
+    $("#barbara").hide()
     $("#barbara").css "filter", "grayscale(100%)"
     $("#barbara").css "-webkit-filter", "grayscale(100%)"
     $("#barbara").css "-moz-filter", "grayscale(100%)"
 
   barbara_color: ->
+    $("#barbara").show()
     $("#barbara").css "filter", ""
     $("#barbara").css "-webkit-filter", ""
     $("#barbara").css "-moz-filter", ""
 
   birgit_grey: ->
+    $("#birgit").hide()
     $("#birgit").css "filter", "grayscale(100%)"
     $("#birgit").css "-webkit-filter", "grayscale(100%)"
     $("#birgit").css "-moz-filter", "grayscale(100%)"
 
   birgit_color: ->
+    $("#birgit").show()
     $("#birgit").css "filter", ""
     $("#birgit").css "-webkit-filter", ""
     $("#birgit").css "-moz-filter", ""
