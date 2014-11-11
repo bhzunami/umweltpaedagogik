@@ -21,3 +21,19 @@
 
 en:
   hello: "Hello world"
+
+  mail_form:
+    models:
+      contact: "Anmeldung Kurse"
+    attributes:
+      contact:
+        email: "Meine E-Mail adresse"
+        school_information: "Schulhaus, Adresse und Telefonnummer Schule"
+        name_teacher: "Name Lehrer"
+        email: "E-Mail"
+        phone: "Telefon / Mobile"
+        class_information: "Klasse und Anzahl Schüler/innen"
+        motivation: "Motivation"
+        course: "Kursname"
+        course_date: "Wunschkursdaten"
+        nickname: "LEER!"

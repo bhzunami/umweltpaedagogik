@@ -1,0 +1,20 @@
+%article#main
+  %h3 Umwelt- und Abfallpädagogik Anmeldeformular 
+  = simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f|
+    = f.input :school_information, required: true, label: "Schulhaus, Adresse und Telefonnummer Schule", :as => :text, :input_html => {:rows => 2}
+    = f.input :name_teacher, required: true, label: "Name Lehrperson"
+    = f.input :email, required: true, label: "E-Mail-Adresse"
+    = f.input :phone, required: true, label: "Natel- und Telefonnummer"
+    = f.input :class_information, :required => true, label: "Klasse und Anzahl Schüler/innen"
+    = f.input :motivation, :required => true, label: "Motivation und Disziplin Schüler/innen", :as => :text, :input_html => {:rows => 2}
+    %br/
+    %h1 Kurse
+    = f.input :course, collection: @contact.course, label: "Kurs"
+    = f.input :course_date, :as => :text, :input_html => {:rows => 2}, label: "Wunschdaten (mind. 3 Vorschläge) bzw. mögliche Wochentage und Monate"
+    
+    .hidden
+      = f.input :nickname, :hint => 'Whats your nickname?'
+    .form-actions
+      = f.button :submit, 'Anmeldung Absenden', :class=> "btn btn-primary", id: "submit_contact"
+
+

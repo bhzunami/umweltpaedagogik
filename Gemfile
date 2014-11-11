@@ -41,6 +41,14 @@ gem "haml-rails"
 # Show image with slide and popup
 gem "fancybox2-rails", "0.2.4"
 
+# Formular
+gem 'simple_form'
+
+gem 'mail_form', '~> 1.5.0.rc'
+
+# Hide config files
+gem 'figaro'
+
 # Prepackaged patterns and components, built on top of Bourbon, Bitters, and Neat
 #gem 'refills'
 

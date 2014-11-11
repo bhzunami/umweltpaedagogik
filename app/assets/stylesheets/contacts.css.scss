@@ -1,0 +1,42 @@
+// Place all the styles related to the contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#new_contact .hidden {
+	display: none !important;
+}
+
+#new_contact div {
+	width: 80%;
+	display: inline-block;
+	margin: 0 auto 5px;
+}
+
+#new_contact abbr {
+	text-decoration: none;
+}
+
+#new_contact div > label {
+	float: left;
+	width: 30%;
+	text-align: left;
+}
+
+#new_contact div > *:nth-child(2) {
+	float: right;
+	width: 69%;
+}
+
+#new_contact textarea {
+	height: 150px;
+}
+
+#submit_contact {
+	height: 30px;
+	font-size: 15pt;
+	display: inline-block;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: #00b0f0;
+ 	background: #BDDCE7;
+}
