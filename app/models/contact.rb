@@ -14,7 +14,7 @@ class Contact < MailForm::Base
   def headers
     {
       subject: "Neue Anmeldung für '#{course}'",
-      to: "nmauchle@gmail.com",
+      to: "nmauchle@gmail.com", # barbara.schumacher@bluewin.ch
       from: %("#{name_teacher}" <#{email}>)
     }
   end

@@ -159,6 +159,9 @@ h3 {
 	a {
 		color: $violet;
 		text-decoration: None;
+		a:hover {
+    background-color: yellow;
+}
 	}
 }
 

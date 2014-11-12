@@ -1,7 +1,8 @@
 %article#main
 	- if flash[:notice]
 		.notice= flash[:notice]
-	%p
+	%p.register_course.keep-right
+		= link_to "Für Kurs anmelden", new_contact_path()
 	#accordion
 		%h4
 			%a{href: "#"} Primarschule und Kindergarten

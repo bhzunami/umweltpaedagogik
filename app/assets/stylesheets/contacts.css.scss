@@ -38,5 +38,19 @@
 	border-radius: 5px;
 	padding: 5px 10px;
 	color: #00b0f0;
- 	background: #BDDCE7;
+	background: #BDDCE7;
 }
+
+$violet: #00b0f0;
+#submit_contact2 {
+	border-radius: 5px;
+  color: $violet;
+  text-decoration: none;
+  padding: 0.6em 1.2em 0.6em 1.2em;
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+    -o-transition: background-color .25s ease-in-out;
+    -ms-transition: background-color .25s ease-in-out;
+    transition: background-color .25s ease-in-out;
+    outline: 0;
+  }
