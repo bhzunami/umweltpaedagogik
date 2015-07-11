@@ -88,3 +88,13 @@
           %a.fancybox{href: image_path(get_original(image, category)), rel: "gallery", title: ""}
             = image_tag(get_image_path(image, category))
   .clear
+  .clear
+  %b Kindergarten & Primar Aesch
+  - category = "kompostmobil/prim_kind_aesch"
+  - @prim_kind_aesch.in_groups_of(4, false) do |image_line|
+    .row.row-content.buffer
+      - image_line.each do |image|
+        .image-box.column
+          %a.fancybox{href: image_path(get_original(image, category)), rel: "gallery", title: ""}
+            = image_tag(get_image_path(image, category))
+  .clear
