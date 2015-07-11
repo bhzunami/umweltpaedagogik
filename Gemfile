@@ -7,11 +7,13 @@ gem 'rails', '4.0.8'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
 	gem 'rspec-rails', '2.13.1'
+	gem 'sqlite3', '1.3.9'
 end
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
+  gem 'sqlite3', '1.3.9'
 end
 
 # Use SCSS for stylesheets
@@ -48,8 +50,6 @@ gem 'mail_form', '~> 1.5.0.rc'
 # Hide config files
 gem 'figaro'
 
-gem 'sqlite3', '1.3.9'
-
 # Prepackaged patterns and components, built on top of Bourbon, Bitters, and Neat
 #gem 'refills'
 
@@ -59,7 +59,7 @@ group :doc do
 end
 
 group :production do
-  #gem 'pg', '0.15.1'
+  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
 
