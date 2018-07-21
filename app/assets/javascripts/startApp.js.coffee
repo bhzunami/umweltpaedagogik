@@ -1,13 +1,14 @@
-$(document).on "ready page:load", ->
+$(document).on "turbolinks:load", (event) ->
   new NavBarController()
   about = new AboutUs_Controller()
+  
   $("#accordion").accordion
     heightStyle: "content"
     navigation: true
     active: false
     collapsible: true
-
-  $(".fancybox").fancybox
+ 
+  $(".fancybox").fancybox (e) ->
     padding: 0
     openEffect: "elastic"
 
@@ -47,8 +48,14 @@ $(document).on "ready page:load", ->
     playerControls: true
     playerInfo: false
 
-  $("#barbara").click ->
+  $("#barbara").click (e) ->
     about.barbara()
+    e.preventDefault()
 
-  $("#birgit").click ->
+  $("#birgit").click (e) ->
     about.birgit()
+    e.preventDefault()
+
+  $("#doris").click (e) ->
+    about.doris()
+    e.preventDefault()
