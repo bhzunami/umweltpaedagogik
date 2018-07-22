@@ -7,10 +7,19 @@ $(document).on "turbolinks:load", (event) ->
     navigation: true
     active: false
     collapsible: true
- 
-  $(".fancybox").fancybox (e) ->
-    padding: 0
-    openEffect: "elastic"
+
+  $('.image-box').magnificPopup
+    type: 'image'
+    delegate: 'a'
+    gallery:
+      enabled:true
+    mainClass: 'mfp-with-zoom'
+    zoom:
+      enabled: true
+      duration: 300
+      easing: 'ease-in-out'
+      opener: (openerElement) ->
+        if openerElement.is('img') then openerElement else openerElement.find('img')
 
   $("#video_1").prettyEmbed
     videoID: "Ucx33NbxOCc"

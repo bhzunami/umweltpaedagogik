@@ -6,6 +6,7 @@ class @AboutUs_Controller
 
     show_barbara: ->
       $("#cv_birgit").hide()
+      $("#cv_doris").hide()
       $("#cv_barbara").fadeIn( "fast" )
       @barbara_color()
       @birgit_grey()
@@ -18,6 +19,7 @@ class @AboutUs_Controller
 
     show_birgit: ->
       $("#cv_barbara").hide()
+      $("#cv_doris").hide()
       $("#cv_birgit").fadeIn( "fast" )
       @barbara_grey()
       @doris_grey()

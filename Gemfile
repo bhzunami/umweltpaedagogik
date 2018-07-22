@@ -40,8 +40,7 @@ gem 'jbuilder', '2.7.0'
 gem "haml-rails"
 
 # Show image with slide and popup
-# We have to use this for rails 5 support
-gem 'fancybox2-rails', '~> 0.3.0', github: 'ChallahuAkbar/fancybox2-rails'
+gem 'magnific-popup-rails', '~> 1.0.1'
 
 # Formular
 gem 'simple_form'
