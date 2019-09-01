@@ -19,6 +19,7 @@ class StaticPagesController < ApplicationController
     @abfallwettspiele = Dir.glob("app/assets/images/gallery/abfallwettspiele/*tb*")
     @kompostmobil = Dir.glob("app/assets/images/gallery/kompostmobil/*tb*")
     @prim_kind_aesch = Dir.glob("app/assets/images/gallery/kompostmobil/prim_kind_aesch/*tb*")
+    @mme_poubelle = Dir.glob("app/assets/images/gallery/mme_poubelle/*tb*")
 
     
   end

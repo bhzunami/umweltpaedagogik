@@ -1,63 +1,74 @@
 class @AboutUs_Controller
-  constructor: ->
-    $("#cv_barbara").hide()
-    $("#cv_birgit").hide()
+    @EMPLOYEES: ['barbara', 'birgit', 'doris', 'david', 'michelle', 'sabine']
+    constructor: ->
+      for employee in AboutUs_Controller.EMPLOYEES
+        hide_cv(employee)
 
-  show_barbara: ->
-    $("#cv_birgit").hide()
-    $("#cv_barbara").fadeIn( "fast" )
-    @barbara_color()
-    @birgit_grey()
+    show_employee = (name) ->
+      for employee in AboutUs_Controller.EMPLOYEES
+        if (employee != name)
+          hide_cv(employee)
+          set_grey_color(employee)
+        else
+          show_cv(employee)
+          set_color(employee)
 
+    hide_employee = (name) ->
+      for employee in AboutUs_Controller.EMPLOYEES
+        if (employee != name)
+          set_color(employee)
+        else
+          hide_cv(employee)
 
-  hide_barbara: ->
-    $("#cv_barbara").fadeOut( "fast" )
-    @birgit_color()
+    set_grey_color = (name) ->
+      $("#" + name).css "filter", "grayscale(100%)"
+      $("#" + name).css "-webkit-filter", "grayscale(100%)"
+      $("#" + name).css "-moz-filter", "grayscale(100%)"
 
-  show_birgit: ->
-    $("#cv_barbara").hide()
-    $("#cv_birgit").fadeIn( "fast" )
-    @barbara_grey()
-    @birgit_color()
+    set_color = (name) ->
+      $("#" + name).css "filter", ""
+      $("#" + name).css "-webkit-filter", ""
+      $("#" + name).css "-moz-filter", ""
 
-  hide_birgit: ->
-    $("#cv_birgit").fadeOut( "fast" )
-    @barbara_color()
+    show_cv = (name) ->
+      cv = "#cv_" + name
+      $(cv).fadeIn( "fast" )
 
-  barbara: ->
-    if $("#cv_barbara").is(":visible")
-      @hide_barbara()
-    else
-      @show_barbara()
+    hide_cv = (name) ->
+      $("#cv_" + name).hide()
+    
+    barbara: ->
+      if $("#cv_barbara").is(":visible")
+        hide_employee('barbara')
+      else
+        show_employee('barbara')
 
-  birgit: ->
-    if $("#cv_birgit").is(":visible")
-      @hide_birgit()
-    else
-      @show_birgit()
+    birgit: ->
+      if $("#cv_birgit").is(":visible")
+        hide_employee('birgit')
+      else
+        show_employee('birgit')
 
+    doris: ->
+      if $("#cv_doris").is(":visible")
+        hide_employee('doris')
+      else
+        show_employee('doris')
+      
+    david: ->
+      if $("#cv_david").is(":visible")
+        hide_employee('david')
+      else
+        show_employee('david')
 
-  #Image manipulation
-  barbara_grey: ->
-    $("#barbara").hide()
-    $("#barbara").css "filter", "grayscale(100%)"
-    $("#barbara").css "-webkit-filter", "grayscale(100%)"
-    $("#barbara").css "-moz-filter", "grayscale(100%)"
+    michelle: ->
+      if $("#cv_michelle").is(":visible")
+        hide_employee('michelle')
+      else
+        show_employee('michelle')
 
-  barbara_color: ->
-    $("#barbara").show()
-    $("#barbara").css "filter", ""
-    $("#barbara").css "-webkit-filter", ""
-    $("#barbara").css "-moz-filter", ""
-
-  birgit_grey: ->
-    $("#birgit").hide()
-    $("#birgit").css "filter", "grayscale(100%)"
-    $("#birgit").css "-webkit-filter", "grayscale(100%)"
-    $("#birgit").css "-moz-filter", "grayscale(100%)"
-
-  birgit_color: ->
-    $("#birgit").show()
-    $("#birgit").css "filter", ""
-    $("#birgit").css "-webkit-filter", ""
-    $("#birgit").css "-moz-filter", ""
+    sabine: ->
+      if $("#cv_sabine").is(":visible")
+        hide_employee('sabine')
+      else
+        show_employee('sabine')

@@ -13,7 +13,7 @@
 		line-height: 42px; /* How big are the titles */
 		display: block;
 		font-size: 14pt;
-		width: 200%;
+		width: 100%;
 		text-indent: 10px; /* Put the title a little bit right */
 	}
 }
@@ -144,6 +144,12 @@ $violet: #00b0f0;
   }
 }
 
+.show_profile {
+  font-size: 10px;
+  line-height: 1em;
+}
+
 .foto_by {
-  font-size: 12px;
+  font-size: 8px;
+  line-height: 1em;
 }
