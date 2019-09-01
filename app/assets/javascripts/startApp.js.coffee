@@ -68,3 +68,15 @@ $(document).on "turbolinks:load", (event) ->
   $("#doris").click (e) ->
     about.doris()
     e.preventDefault()
+
+  $("#david").click (e) ->
+    about.david()
+    e.preventDefault()
+
+  $("#michelle").click (e) ->
+    about.michelle()
+    e.preventDefault()
+
+  $("#sabine").click (e) ->
+    about.sabine()
+    e.preventDefault()

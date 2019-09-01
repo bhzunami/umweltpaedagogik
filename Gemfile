@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-ruby '2.5.1'
+ruby '2.5.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.0'
+gem 'rails', '5.2.3'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
@@ -17,13 +17,13 @@ group :test do
 end
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '5.0.6'
+gem 'sass-rails', '6.0.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '3.2.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '4.2.2'
+gem 'coffee-rails', '5.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '4.3.1'

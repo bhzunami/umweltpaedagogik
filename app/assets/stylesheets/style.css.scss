@@ -46,6 +46,11 @@ h5 {
 	margin-bottom: 0em;
 }
 
+h6 {
+	font-size: 12pt;
+	margin-bottom: 0.5em;
+}
+
 #title_institut {
 	font-weight: 400;
 }
@@ -72,9 +77,13 @@ h3 {
 @-ms-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
 @keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
 
+/*
+Color = #6dbf72
+*/
 #banner {
 	background-attachment: fixed; /* image is fix at this position */
-	background-image: image-url("images/banner.jpg"); /* http://bengansblogg.wordpress.com/2011/09/10/naturbilder-wallpapers-31-50/#jp-carousel-1744 */
+	/* background-image: image-url("images/banner.jpg"); /* http://bengansblogg.wordpress.com/2011/09/10/naturbilder-wallpapers-31-50/#jp-carousel-1744 */
+	background-color: #b8f57a;
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -95,7 +104,6 @@ h3 {
 		-o-animation-fill-mode: forwards;
 		-ms-animation-fill-mode: forwards;
 		animation-fill-mode: forwards;
-		background: rgba(52, 27, 43, 0.3);
 		color: white;
 		display: inline-block;
 		opacity: 0; /* don't show it before animation */
@@ -104,8 +112,6 @@ h3 {
 
 		header {
 			display: inline-block;
-			border-bottom: solid 2px;
-			border-top: solid 2px;
 			margin: 0 0 0 0; /* where is the text set */
 			padding: 12px 0 12px 0; /* Where is the border*/
 			font-size: 2.5em;
