@@ -114,9 +114,10 @@ Color = #6dbf72
 			display: inline-block;
 			margin: 0 0 0 0; /* where is the text set */
 			padding: 12px 0 12px 0; /* Where is the border*/
-			font-size: 2.5em;
+			font-size: 3.5em;
+			font-weight: bold;
 			letter-spacing: 0.1em;
-
+			color: #90909a;
 			a {
 					color: inherit;
 					text-decoration: none;
