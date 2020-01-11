@@ -51,18 +51,8 @@ $(document).on "turbolinks:load", (event) ->
     playerControls: true
     playerInfo: false
 
-  $("#video_6").prettyEmbed
-    videoID: "GLgh9h2ePYw"
-    useFitVids: false
-    playerControls: true
-    playerInfo: false
-
   $("#barbara").click (e) ->
     about.barbara()
-    e.preventDefault()
-
-  $("#birgit").click (e) ->
-    about.birgit()
     e.preventDefault()
 
   $("#doris").click (e) ->

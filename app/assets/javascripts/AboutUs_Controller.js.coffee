@@ -1,5 +1,5 @@
 class @AboutUs_Controller
-    @EMPLOYEES: ['barbara', 'birgit', 'doris', 'david', 'michelle', 'sabine']
+    @EMPLOYEES: ['barbara', 'doris', 'david', 'michelle', 'sabine']
     constructor: ->
       for employee in AboutUs_Controller.EMPLOYEES
         hide_cv(employee)
@@ -42,12 +42,6 @@ class @AboutUs_Controller
         hide_employee('barbara')
       else
         show_employee('barbara')
-
-    birgit: ->
-      if $("#cv_birgit").is(":visible")
-        hide_employee('birgit')
-      else
-        show_employee('birgit')
 
     doris: ->
       if $("#cv_doris").is(":visible")
