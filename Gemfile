@@ -43,7 +43,7 @@ gem "haml-rails"
 gem 'magnific-popup-rails', '~> 1.0.1'
 
 # Formular
-gem 'simple_form'
+gem "simple_form", ">= 5.0.0"
 
 gem 'mail_form', '~> 1.7.1'
 
