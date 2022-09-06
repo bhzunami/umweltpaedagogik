@@ -1,4 +1,4 @@
-$(document).on "turbolinks:load", (event) ->
+$(document).on "ready page:load", ->
   new NavBarController()
   about = new AboutUs_Controller()
   
